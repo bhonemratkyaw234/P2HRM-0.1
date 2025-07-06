@@ -82,7 +82,7 @@ public class DutyRoster extends javax.swing.JPanel {
         jLabel1.setText("Staff ID    :");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setText("Shift Code:");
+        jLabel3.setText("Roster_Type_ID:");
 
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton8.setText("Notice!");
@@ -92,8 +92,17 @@ public class DutyRoster extends javax.swing.JPanel {
             }
         });
 
+        transparentComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" }));
+        transparentComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                transparentComboBox1ActionPerformed(evt);
+            }
+        });
+
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("Select Team :");
+
+        transparentComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "EP", "Network", "Civil", "Programming" }));
 
         javax.swing.GroupLayout FirstInputLayout = new javax.swing.GroupLayout(FirstInput);
         FirstInput.setLayout(FirstInputLayout);
@@ -112,7 +121,7 @@ public class DutyRoster extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(FirstInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(transparentTextfield2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(transparentComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                    .addComponent(transparentComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(transparentComboBox2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -291,6 +300,10 @@ public class DutyRoster extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "1. min_interval (Subsequent shift should be planned by 8 hours interval)\n" +
             "2. roster_interval (Roster planning should be arranged prior to 7 days ahead) ", "Roster Policy!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void transparentComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transparentComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_transparentComboBox1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
