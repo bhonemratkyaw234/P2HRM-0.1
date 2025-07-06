@@ -34,9 +34,21 @@ public DbProcessor() {
     }
       
     
-    public void add(SGdutyroster sg){
+    public void save(SGdutyroster sg){
+        //for DutyRoster.java
+    }
+    public void remove (SGdutyroster sg){
+        //fpr DutyRoster.java
         
     }
-    
+    public void edit(SGdutyroster sg){
+        //For dutyRoster.java
+    }
+    public void refresh(SGdutyroster sg){
+        //for dutyRoster.java
+    }
+    public void search(SGdutyroster sg){
+        //with team(eg.ep,network,programming,civil
+    }
   
 }
